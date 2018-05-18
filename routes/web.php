@@ -14,3 +14,13 @@
 Route::get('/', function () {
     return redirect('/login');
 });
+
+Route::group(['middleware' => 'auth'], function(){
+
+	Route::post('login'				,array('uses' => 'HomeController@doLogin'));
+});
+
+Route::get('login'				,array('uses' => 'HomeController@showLogin'));
+Route::get('registrar/'			,array('uses' => 'UsuarioController@create'));
+Route::post('registrar/save/'	,array('uses' => 'UsuarioController@save'));
+Route::get('logout'				,array('uses' => 'HomeController@logOut'));

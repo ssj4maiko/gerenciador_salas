@@ -1,0 +1,104 @@
+#login_form{
+	width:400px;
+	margin: 200px auto 0;
+	font-family: Tahoma, Arial;
+}
+a {
+  color: inherit; /* blue colors for links too */
+  text-decoration: inherit; /* no underline */
+}
+fieldset{
+	border-radius: 10px;
+}
+
+#login_form input[type="text"],
+#login_form input[type="password"]{
+	width:250px;
+	border-radius: 5px;
+	border:1px solid #ddd;
+	font-size: 15px;
+}
+#login_form input[type="submit"],
+#login_form .aButton{
+	width:100%;
+}
+#login_form label{
+	display:inline-block;
+	width:140px;
+	text-align:right;
+}
+
+form input[type="submit"],
+.aButton{
+	display:inline-block;
+	background-color:transparent;
+	border:1px;
+	padding:15px 0;
+	text-align:center;
+	font-size:inherit;
+	border-radius: 10px;
+	margin:0;
+	outline:none;
+	font-family: Tahoma, Arial;
+}
+.button_green{
+	background-color:#afa !important;
+}
+.button_green:hover,
+.button_green:focus{
+	background-color:#5f5 !important;
+	color:#000;
+}
+.button_red{
+	background-color:#faa !important;
+}
+.button_red:hover,
+.button_red:focus{
+	background-color:#f55 !important;
+	color:#fff;
+}
+
+
+
+.generic_form input[type="submit"],
+.generic_form .aButton{
+	cursor: pointer;
+	margin: 0 15px;
+}
+
+.generic_form p.form_field input{
+	width:250px;
+	border-radius: 5px;
+	border:1px solid #ddd;
+	font-size: 15px;
+}
+
+
+
+.generic_form{
+	font-size:15px;
+}
+
+.generic_form label{
+	font-size:inherit;
+	display:inline-block;
+	width:130px;
+	text-align:right;
+}
+.generic_form label:after{
+	content:":";
+}
+.generic_form .form_error{
+	color:#fff;
+	background-color:#F00;
+	padding:0px 10px;
+	font-size:small;
+	border-radius:5px;
+}
+
+
+
+
+.generic_form h1{
+	font-size:large;
+}
