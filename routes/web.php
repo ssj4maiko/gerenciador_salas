@@ -25,6 +25,10 @@ Route::group(['middleware' => 'auth'], function(){
 	Route::post('usuario/save/{id}' ,array('uses' => 'UsuarioController@save'));
 	Route::get('usuario/del/{id}'	,array('uses' => 'UsuarioController@del'));
 
+	Route::get('sala/{id?}'			,array('uses' => 'SalaController@create'));
+	Route::post('sala/save/{id?}'	,array('uses' => 'SalaController@save'));
+	Route::get('sala/del/{id}'		,array('uses' => 'SalaController@del'));
+
 });
 
 Route::get('login'				,array('uses' => 'HomeController@showLogin'));

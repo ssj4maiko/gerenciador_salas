@@ -12,9 +12,11 @@ class ReservaController extends Controller
 {
     public function index(Request $request)
     {
+        $salas = Salas::get();
         return view('home',array(
                              'title'    => 'Dashboard'
-                            ,'inner'    => null
+                            ,'inner'    => 'reserva'
+                            ,'salas'    => $salas
                     ));
     }
 }
