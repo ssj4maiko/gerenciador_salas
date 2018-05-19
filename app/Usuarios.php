@@ -16,9 +16,6 @@ class Usuarios extends Model
     public function scopeCurrentUser($query){
     	$id = \Cookie::get('id_usuario');
     	if($id){
-	    	if(!is_integer($id))
-	    		$id = Crypt::decrypt($id);
-
 	    	return $query->find($id);
     	}
     	return $query;

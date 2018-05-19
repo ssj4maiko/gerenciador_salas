@@ -18,6 +18,13 @@ Route::get('/', function () {
 Route::group(['middleware' => 'auth'], function(){
 
 	Route::post('login'				,array('uses' => 'HomeController@doLogin'));
+
+	Route::get('home'				,array('uses' => 'ReservaController@index'));
+	
+	Route::get('usuario/{id}'		,array('uses' => 'UsuarioController@create'));
+	Route::post('usuario/save/{id}' ,array('uses' => 'UsuarioController@save'));
+	Route::get('usuario/del/{id}'	,array('uses' => 'UsuarioController@del'));
+
 });
 
 Route::get('login'				,array('uses' => 'HomeController@showLogin'));
