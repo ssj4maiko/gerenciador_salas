@@ -28,6 +28,10 @@ Route::group(['middleware' => 'auth'], function(){
 	Route::get('sala/{id?}'			,array('uses' => 'SalaController@create'));
 	Route::post('sala/save/{id?}'	,array('uses' => 'SalaController@save'));
 	Route::get('sala/del/{id}'		,array('uses' => 'SalaController@del'));
+	
+	Route::get('reserva/check/'		,array('uses' => 'ReservaController@getData'));
+	Route::any('reserva/save/{id?}',array('uses' => 'ReservaController@save'));
+	Route::get('reserva/del/{id}'	,array('uses' => 'ReservaController@del'));
 
 });
 

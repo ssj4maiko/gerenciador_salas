@@ -1,0 +1,33 @@
+.calendar > table{
+	margin: 0 auto;
+}
+
+
+.grafico_campo{
+	height:70px;
+	width:auto;
+	position:relative;
+	border-radius: 0px;
+	padding:0px;
+	cursor:pointer;
+}
+
+.barra_grafico{
+	height:100%;
+	position:absolute;
+	outline: 1px solid #aaa;
+	top:0;
+	padding:0px;
+	overflow:hidden;
+	font-size:12px;
+	cursor:pointer;
+}
+.barra_grafico:hover{
+	opacity:0.8;
+}
+
+.background_text{
+	text-align:center;
+	font-size:20px;
+	color:rgba(0,0,0,0.5);
+}

@@ -9,6 +9,9 @@
 <head>
 	<title>{{$title}}</title>
 	<base href="{{ URL::to('/public') }}">
+	{{ Html::script('calendarview/js/prototype.js') }}
+	{{ Html::script('calendarview/js/calendarview.js') }}
+	{{ Html::style('calendarview/css/calendarview.css') }}
 
 	{{ Html::style('css/base.css') }}
 	{{ Html::style('css/form.css') }}
